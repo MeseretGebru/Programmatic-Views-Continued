@@ -16,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //setup view hierarchy
+        let viewController = Exercise1ViewController()
+        
+        //setup window
+        
+        // 1) initializes and sets the frame
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // 2) initial vire controller
+        window?.rootViewController = viewController
+        
+        // 3) set to main window and make it visible on screen
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
